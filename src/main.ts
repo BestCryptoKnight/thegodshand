@@ -9,5 +9,6 @@ if (environment.production) {
   window.console.log = function () { };
 }
 
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
