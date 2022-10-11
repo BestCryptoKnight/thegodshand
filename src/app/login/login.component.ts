@@ -3,7 +3,7 @@ import { AuthService } from '../_service/auth.service';
 import { TokenStorageService } from '../_service/token-storage.service';
 import { Router } from '@angular/router';
 import { GlobalService } from '../global.service';
-
+import { LoggerService } from '../_service/logger/logger.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   password:any;
   username:any;
 
-  constructor(private authService:AuthService,private tokenStorageService:TokenStorageService,private router: Router,public globalService:GlobalService,) { }
+  constructor(private authService:AuthService,private tokenStorageService:TokenStorageService,private router: Router,public globalService:GlobalService, private logger: LoggerService) { }
 
   ngOnInit(): void {
   }
@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
       if(result.token){
        this.tokenStorageService.saveToken(result.token);
        this.tokenStorageService.saveUser(result)
+       this.logger.info("Login Successful");
        this.globalService.showSuccess("Login Successful");
        this.router.navigate(['/']);
       }

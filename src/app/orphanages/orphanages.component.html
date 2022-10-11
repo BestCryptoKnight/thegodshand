@@ -13,8 +13,8 @@
                         *ngIf="token.getUser().is_admin">Add Orphanage</button>
                 </div>
             </div>
-            <div class="col-md-auto">
-                <div class="input-group d-flex justify-content-center my-1" *ngIf="!token.getUser().is_admin">
+            <div class="col-md-auto  mr-n3">
+                <div class="input-group my-1" *ngIf="!token.getUser().is_admin">
                     <div class="form-outline">
                         <input type="search" (keydown.enter)="setSearchOrphonage()" [(ngModel)]="selected_country"
                             class="form-control" list="datalistOptions" placeholder="Search country" />
@@ -101,7 +101,7 @@
 THE CHARITY WHO IS RUNNING THIS CAMPAIGN -->
                     <div class="mt-3" style="align-items: center; display: flex; width: 100%; justify-content: center;">
                         <div style="display: flex;">
-                            <img style="width: 30px !important; margin-left: 10px;" src="../../assets/by_icon.jpg" />
+                            <img style="width: 30px !important; margin-left: 10px;" src="assets/by_icon.jpg" />
                             <span style="font-size: 14px;max-width: 296px;" class="text-color; mx-1">{{"by " +
                                 orphonage.name}}
                             </span>

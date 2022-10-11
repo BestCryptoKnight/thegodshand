@@ -2,7 +2,7 @@
     <div class="col-12 mt-4 px-0" style="border-bottom: 1px solid #eee;">
         <div class="d-flex px-3 py-2" style="box-shadow: 0px 0px 5px 3px #eee;">
             <div style="width: 150px;">
-                <img style="width: 100%;border-radius: 5px;margin-top: 10px;" src="../../assets/orphonage1.jpeg" alt="">
+                <img style="width: 100%;border-radius: 5px;margin-top: 10px;" src="assets/orphonage1.jpeg" alt="">
             </div>  
             <div style="width: calc(100% - 150px);">
                 <div class="d-flex ml-3" style="justify-content: space-between;align-items: center;">
@@ -42,23 +42,38 @@
 
 <div class="picsum-img-wrapper" [ngStyle]="{'height': heightScreen + 'px'}">
     <div
-        style="background: url(../../assets/bg.jpg)
+        style="background: url(assets/bg-min.jpg)
            ;height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;position: relative;">
 
         <div style="height: 100%;background: #00000066;"></div>
-        <div class="carousel-caption  ml-auto" style="width: 60%;">
-            <h1 class="text-white text-uppercase laptop-margin" style="font-size: 2.5rem; ">Donate</h1>
-            <h2 class="text-white text-uppercase " style="font-size: 1.5rem;">For The Helpless PEOPLE</h2>
-            <p class="text-white font-weight-400 mb-sm-10 mt-sm-0 mt-md-5">
-                THE GODS HAND connects nonprofits, donors, <br />
-                and organisations in almost every country on the planet.<br />
-                We assist other NGOs in obtaining the resources, funds, <br />
-                instruction, and assistance they require to serve their communities.
-            </p>
-            <a class="btn btn-colored btn-theme-colored btn-flat smooth-scroll-to-target laptop-margin-button"
-                (click)="globalService.where = ''" routerLink="orphenages">Donate
-                Now</a>
 
+
+        
+
+        <div class="carousel-caption  ml-auto " style="width: 60%;">
+                <div class="row ">
+                  <div class="col ">
+                    <span style = "position: relative;top: -20px;">
+                        <h1 class="text-white text-uppercase laptop-margin" style="font-size: 2.5rem; ">Donate</h1>
+                        <h2 class="text-white text-uppercase " style="font-size: 1.5rem;">For The Helpless PEOPLE</h2>
+                    </span>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col">
+                    <p class="text-white font-weight-400 float-right text-justify">
+                        THE GODS HAND connects nonprofits, donors, <br />
+                        and organisations in almost every country on the planet.<br />
+                        We assist other NGOs in obtaining the resources, funds, <br />
+                        and assistance they require to serve their communities.
+                    </p>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col">
+                    <a class="btn btn-colored btn-theme-colored btn-flat smooth-scroll-to-target laptop-margin-button"
+                    (click)="globalService.where = ''" routerLink="orphenages">Donate
+                    Now</a>
+                  </div>
+              </div>
         </div>
     </div>
 </div>
@@ -101,7 +116,7 @@
 
                     <div class="mt-3" style="align-items: center; justify-content: center; width: 100%; display: flex;">
                         <div style="display: flex;">
-                            <img style="width: 30px !important; margin-left: 10px;" src="../../assets/by_icon.jpg" />
+                            <img style="width: 30px !important; margin-left: 10px;" src="assets/by_icon.jpg" />
                             <span style="font-size: 14px;max-width: 296px;" class="text-color; mx-1">{{"by " +
                                 orphonage.name}}
                             </span>
@@ -234,7 +249,7 @@
                     <div class="py-5">
                         <h1 class="text-center">We’re caring for families around the world through our 3 core programs
                         </h1>
-                        <img src="../../assets/about-us-worldmap.webp" style="padding: 50px 100px;" alt="World Map"
+                        <img src="assets/about-us-worldmap.webp" style="padding: 50px 100px;" alt="World Map"
                             width="100%" />
                     </div>
                 </div>
@@ -249,13 +264,13 @@
                                 travel far from home for the medical care their child needs.
                             </p>
                             <div>
-                                <img src="../../assets/about-us-img1.webp" alt="About us image" />
+                                <img src="assets/about-us-img1.webp" alt="About us image" />
                             </div>
                             <a class="btn btn-theme-colored mt-4">Learn More</a>
 
                         </div>
                         <div class="col-7">
-                            <img src="../../assets/about-us-worldmap-small.webp" width="100%" />
+                            <img src="assets/about-us-worldmap-small.webp" width="100%" />
                         </div>
                     </div>
                 </div>
@@ -268,13 +283,13 @@
                             <p>provide comfort to families right in the hospital, giving them a private place to relax
                                 or decompress.</p>
                             <div>
-                                <img src="../../assets/about-us-img1.webp" alt="About us image" />
+                                <img src="assets/about-us-img1.webp" alt="About us image" />
                             </div>
                             <a class="btn btn-theme-colored mt-4">Learn More</a>
 
                         </div>
                         <div class="col-7">
-                            <img src="../../assets/about-us-worldmap-small1.webp" width="100%" />
+                            <img src="assets/about-us-worldmap-small1.webp" width="100%" />
                         </div>
                     </div>
                 </div>
@@ -291,7 +306,7 @@
     <div class="container">
         <div class="py-5">
             <h1 class="text-center">We’re caring for families around the world through our 3 core programs</h1>
-            <img src="../../assets/about-us-worldmap.webp" style="padding: 50px 100px;" alt="World Map" width="100%" />
+            <img src="assets/about-us-worldmap.webp" style="padding: 50px 100px;" alt="World Map" width="100%" />
         </div>
         <div class="row about-us-section2 py-5">
             <div class="col-5">
@@ -300,13 +315,13 @@
                     are a home away from home that provide comfort, support and resources to families who travel far from home for the medical care their child needs.
                 </p>
                 <div>
-                    <img src="../../assets/about-us-img1.webp" alt="About us image" />
+                    <img src="assets/about-us-img1.webp" alt="About us image" />
                 </div>
                 <a class="btn btn-theme-colored mt-4">Learn More</a>
 
             </div>
             <div class="col-7">
-                <img src="../../assets/about-us-worldmap-small.webp" width="100%" />
+                <img src="assets/about-us-worldmap-small.webp" width="100%" />
             </div>
         </div>
         <div class="row about-us-section2 py-5">
@@ -314,13 +329,13 @@
                 <h2>Ronald McDonald Family Room programs</h2>
                 <p>provide comfort to families right in the hospital, giving them a private place to relax or decompress.</p>
                 <div>
-                    <img src="../../assets/about-us-img1.webp" alt="About us image" />
+                    <img src="assets/about-us-img1.webp" alt="About us image" />
                 </div>
                 <a class="btn btn-theme-colored mt-4">Learn More</a>
 
             </div>
             <div class="col-7">
-                <img src="../../assets/about-us-worldmap-small1.webp" width="100%" />
+                <img src="assets/about-us-worldmap-small1.webp" width="100%" />
             </div>
         </div>
     </div>
